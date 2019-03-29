@@ -1,5 +1,6 @@
 package ru.avalon.java.dev.j10.labs.initialization;
 
+import java.util.Random;
 import ru.avalon.java.dev.j10.labs.Initializer;
 
 /**
@@ -14,6 +15,16 @@ import ru.avalon.java.dev.j10.labs.Initializer;
  * инициализации.
  */
 public class RandomInitializer implements Initializer {
+    
+    private int minValue;
+    private int maxValue;
+
+    public RandomInitializer(int minValue, int maxValue) {
+        this.minValue = minValue;
+        this.maxValue = maxValue;
+    }
+    
+    
 
     /**
      * Выполняет инициализацию массива, значениями
@@ -22,8 +33,19 @@ public class RandomInitializer implements Initializer {
      * @param array массив, подлежащий инициализации
      */
     public void initialize(int[] array) {
+        
+        Random rnd = new Random();
+        for (int i = 0; i < array.length; i++) {
+            
+        
+// Получаем случайное число в диапазоне от min до max (включительно)
+       array[i] = minValue + rnd.nextInt(maxValue - minValue + 1);
+        
         /*
          * TODO(Студент): Реализовать метод initialize класса RandomInitializer
          */
+        }
     }
+    
+    
 }
