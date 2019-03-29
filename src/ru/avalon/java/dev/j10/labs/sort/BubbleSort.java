@@ -18,6 +18,13 @@ public class BubbleSort implements Sort {
      */
     public void sort(int[] array) {
         
+        /*  TODO (Проверка№1 ЛР№3)
+            - Перед обращением к массиву следует делать проверку на правильность массива,
+            если array = null, возникает ошибка!!!
+            - Исправить!
+            - Добавить комментарии к полям и методам класса
+        */
+        
         int temp = 0;
         boolean swap = true;
         int range = array.length - 1;
