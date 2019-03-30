@@ -32,6 +32,13 @@ public class ShellSort implements Sort {
         /*
          * TODO(Студент): Реализовать метод sort класса ShellSort
          */
+        
+        /*  TODO (Проверка№1 ЛР№3)
+            - Перед обращением к массиву следует делать проверку на правильность массива,
+            если array = null, возникает ошибка!!!
+            - Исправить!
+            - Добавить комментарии к полям и методам класса
+        */
     }
     
     private void insertionSort (int[] arr, int startIndex, int increment) {

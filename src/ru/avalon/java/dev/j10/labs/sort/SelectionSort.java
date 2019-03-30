@@ -19,6 +19,13 @@ public class SelectionSort implements Sort {
      */
     public void sort(int[] array) {
         
+        /*  TODO (Проверка№1 ЛР№3)
+            - Перед обращением к массиву следует делать проверку на правильность массива,
+            если array = null, возникает ошибка!!!
+            - Исправить!
+            - Добавить комментарии к полям и методам класса
+        */
+        
         for (int min = 0; min < array.length - 1; min++) {
 		int least = min;
 		for (int j = min + 1; j < array.length; j++) {
